@@ -25,4 +25,3 @@ user.save((error,data)=>{
     console.log("Guardado"+data);
     process.exit(0);
 });
-
