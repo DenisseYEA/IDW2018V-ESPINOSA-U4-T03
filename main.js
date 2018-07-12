@@ -3,7 +3,7 @@ var userSchema = require('./userSchema');
 
 //Conexión
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1:27017/alumnos',{useMongoClient:true});
+mongoose.connect('mongodb://127.0.0.1:27017/Alumnos',{useMongoClient:true});
 
 //Modelo
 
@@ -24,5 +24,5 @@ user.save((error,data)=>{
     }
     console.log("Guardado"+data);
     process.exit(0);
-})
+});
 
